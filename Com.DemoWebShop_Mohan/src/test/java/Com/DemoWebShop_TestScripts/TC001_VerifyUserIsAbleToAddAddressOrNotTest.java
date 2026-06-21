@@ -35,6 +35,7 @@ public class TC001_VerifyUserIsAbleToAddAddressOrNotTest extends BaseTest {
 		addNewAddressesPage.getPhoneNumberTextField().sendKeys(fileutility.readDataFromExcelFile("Sheet1", 1, 8));
 
 		addNewAddressesPage.getSaveButton().click();
+		System.out.println("VerifyUserIsAbleToAddAddressOrNotTest");
 
 		Thread.sleep(3000);
 		webDriverUtility.WebPageScreenShot(driver);
